@@ -46,6 +46,10 @@ h5 {
   color: #01161e;
 }
 
+.colored {
+  background-color: #dee2e6;
+}
+
 /* Header and Nav styling */
 
 .header-style {
@@ -202,16 +206,21 @@ button {
 .courses-section > div {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 72px 0px 72px;
+  margin: 0px 72px;
   justify-content: center;
 }
 
-.courses-description {
-  padding: 16px 0px 24px 16px;
-  background-color: #fff;
+.courses img {
+  height: auto;
+  margin-bottom: 16px;
 }
 
-.courses-description > h4 {
+.courses-description {
+  margin-left: 16px;
+  margin-bottom: 24px;
+}
+
+.courses-description h4 {
   margin-bottom: 12px;
 }
 
@@ -219,7 +228,15 @@ button {
   margin-bottom: 16px;
 }
 
-/*Courses section styling*/
+.courses {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin: 0px 20px 32px 20px;
+  background-color: #fff;
+}
+
+/* Exhibit section styling */
 
 .exhibit-section h2 {
   text-align: center;
@@ -233,7 +250,7 @@ button {
 #reimagine {
   margin-bottom: 15px;
 }
-.exhibit-section > div {
+#exhibit-1 {
   margin: 32px 24px;
   width: 60%;
 }
@@ -242,21 +259,63 @@ button {
   width: 100%;
 }
 
+.exhibit-description {
+  width: 40%;
+  margin-top: 32px;
+  margin-right: 24px;
+}
+
+.exhibit-feature {
+  display: flex;
+  align-items: center;
+}
+
+.exhibit {
+  display: flex;
+  width: 100%;
+}
+
+.exhibit-description img {
+  margin: 16px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 12px 36px 24px;
+  border-top: 1px dotted #9f9b9b;
+}
 /* Media query */
 
 @media screen and (max-width: 720px) {
+  /* Header Section */
+
+  .header-style {
+    height: 64px;
+  }
+
   .landing-section {
     flex-direction: column;
   }
 
+  .landing-section img {
+    width: 100%;
+  }
+
   .img-description {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     width: 100%;
   }
 
   .img-description > h1 {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+  }
+
+  .img-description > h4 {
+    margin-bottom: 8px;
   }
 
   .header-style > div,
@@ -272,8 +331,41 @@ button {
     justify-content: space-around;
   }
 
-  .landing-section img {
-    padding: 0px;
-    margin-bottom: 30px;
+  /* Feature section */
+
+  .feature-section-img {
+    display: none;
+    width: 0%;
+  }
+
+  .feature {
+    width: 100%;
+    display: flex;
+  }
+
+  .feature > div {
+    flex-direction: column;
+  }
+
+  /* Exhibit Section */
+
+  #exhibit-1 > div:nth-of-type(2),
+  .exhibit-description {
+    display: none;
+  }
+
+  .exhibit-section video {
+    margin-bottom: 0px;
+  }
+
+  #exhibit-1 {
+    width: 100%;
+    margin: 32px 0px;
+  }
+
+  /* Footer section */
+
+  footer {
+    padding-left: 16px;
   }
 }
