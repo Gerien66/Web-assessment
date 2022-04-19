@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #989898;
+}
+
+/* Common CSS styles */
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #4f4f4f;
+}
+
+.light-grey {
+  color: #9f9b9b;
+}
+
+.dark-grey {
+  color: #01161e;
+}
+
+/* Header and Nav styling */
+
+.header-style {
+  display: flex;
+  padding: 20px;
+  height: 64px;
+}
+
+.header-style > div {
+  display: flex;
+  margin-left: 24px;
+  height: 32px;
+}
+
+.header-style > nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 24px;
+}
+
+nav a:link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #4f4f4f;
+  margin-left: 16px;
+}
+
+nav > a > img {
+  display: none;
+}
+
+/*landing section styling*/
+
+.landing-section {
+  background-color: #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.landing-section > div {
+  flex-grow: 1;
+}
+
+.landing-section img {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.img-description > h1 {
+  margin-bottom: 16px;
+}
+
+.img-description > h4 {
+  margin-bottom: 8px;
+}
+
+button {
+  width: 65%;
+  background-color: #4f4f4f;
+  color: #fff;
+  padding: 5px;
+}
+
+/*Features section styling*/
+
+.feature-section img {
+  margin-bottom: 24px;
+  margin: 32px 24px;
+  width: 100%;
+}
+
+.feature-section-img {
+  width: 60%;
+}
+
+.feature-caption {
+  margin-left: 24px;
+  width: 100%;
+}
+
+.feature-caption > h2 {
+  margin-bottom: 24px;
+}
+
+.feature-caption > p {
+  margin-bottom: 32px;
+}
+
+.feature-caption > h5 {
+  margin-bottom: 32px;
+}
+
+.feature img {
+  width: 35%;
+  margin-left: 100px;
+  margin: auto;
+}
+
+.feature-details {
+  width: 65%;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.feature-section {
+  display: flex;
+}
+
+.feature > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 30%;
+  margin-top: 32px;
+}
+
+.feature h3 {
+  margin-bottom: 24px;
+}
+
+.feature p {
+  margin-bottom: 20px;
+}
+
+.feature div:nth-child(3) {
+  background-color: #dee2e6;
+}
+
+.feature-details > a {
+  text-decoration: none;
+}
+
+/*Courses section styling*/
+
+.courses-section {
+  background-color: #dee2e6;
+}
+
+.courses-section h2 {
+  padding: 32px 0px;
+  text-align: center;
+}
+
+.courses-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 72px 0px 72px;
+  justify-content: center;
+}
+
+.courses-description {
+  padding: 16px 0px 24px 16px;
+  background-color: #fff;
+}
+
+.courses-description > h4 {
+  margin-bottom: 12px;
+}
+
+.courses-description > p:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+/*Courses section styling*/
+
+.exhibit-section h2 {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.exhibit-section video {
+  margin-bottom: 24px;
+}
+
+#reimagine {
+  margin-bottom: 15px;
+}
+.exhibit-section > div {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.exhibit-section video {
+  width: 100%;
+}
+
+/* Media query */
+
+@media screen and (max-width: 720px) {
+  .landing-section {
+    flex-direction: column;
+  }
+
+  .img-description {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .img-description > h1 {
+    margin-bottom: 30px;
+  }
+
+  .header-style > div,
+  nav > a > span {
+    display: none;
+  }
+
+  nav > a > img {
+    display: block;
+  }
+
+  .header-style > nav {
+    justify-content: space-around;
+  }
+
+  .landing-section img {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+}
